@@ -1270,6 +1270,22 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'bot' || $command == 'BOT' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $profil->displayName.
+					'Ada apa sebut saya??'
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'Pagi' || $command == 'pagi' ) {
 
         $balas = array(
